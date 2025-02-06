@@ -1,3 +1,7 @@
 # __pycache__ directories
 __pycache__/
 *.py[cod]
+migrations/__pycache__
+movies/__pycache__/
+movies/migrations/__pycache__/
+moviesstore/__pycache__/
