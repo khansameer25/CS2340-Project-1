@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'home',
     'movies',
     'accounts',
+    'cart',
 ]
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
