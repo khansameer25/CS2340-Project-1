@@ -1,5 +1,11 @@
 from django.contrib import admin
-from .models import Order, Item
+from .models import Item, Order
 
-admin.site.register(Order)
-admin.site.register(Item)
+class OrderAdmin(admin.ModelAdmin):
+    readonly_fields = ('total',)
+
+class ItemAdmin(admin.ModelAdmin):
+    readonly_fields = ('price',)
+
+admin.site.register(Order, OrderAdmin)
+admin.site.register(Item, ItemAdmin)
